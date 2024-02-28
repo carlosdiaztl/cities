@@ -16,9 +16,12 @@
                         <div class="form-group">
                             <select id="country">
                                 <option value="">Selecciona un país</option>
+                                @if (!empty($countries))
+                                    
                                 @foreach ($countries as $country)
                                     <option value="{{ $country['iso2'] }}">{{ $country['name'] }}</option>
                                 @endforeach
+                                @endif
                             </select>
     
                             <select id="state">

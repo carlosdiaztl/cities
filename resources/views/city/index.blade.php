@@ -2,6 +2,14 @@
 
 @section('content')
     <div class="container">
+        @if (!empty($cities))
+        <h4>No tiene ciudades guardadas</h4>
+        <p>
+            Busque una ciudad y guardela ...
+        </p>
+            
+        @else
+            
         <h4>Listado de ciudades</h4>
         <div class="table-responsive">
             <table class="table">
@@ -49,5 +57,6 @@
 
 
         </div>
+        @endif
     </div>
 @endsection
