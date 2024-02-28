@@ -25,7 +25,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/cities/{state}/{country} ', [App\Http\Controllers\HomeController::class, 'cities'])->name('cities');
     Route::get('/city/{city} ', [App\Http\Controllers\HomeController::class, 'city'])->name('city');
     Route::post('/city', [App\Http\Controllers\HomeController::class, 'store'])->name('city.store');
-    Route::get('/cities/{user} ', [App\Http\Controllers\CityController::class, 'index'])->name('city.index');
-    Route::delete('/cities/{city} ', [App\Http\Controllers\CityController::class, 'destroy'])->name('city.destroy');
+    Route::get('/mis-ciudades/{user}', [App\Http\Controllers\CityController::class, 'index'])->name('city.index');
+    Route::delete('/mis-ciudades/{city} ', [App\Http\Controllers\CityController::class, 'destroy'])->name('city.destroy');
 
 });

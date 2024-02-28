@@ -16,6 +16,9 @@ return new class extends Migration
             $table->string('country-name');
             $table->string('population');
             $table->string('city-name');
+            $table->string('latitude');
+            $table->string('longitude');
+            $table->string('capital');
             $table->timestamps();
         });
     }

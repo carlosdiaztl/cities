@@ -12,6 +12,9 @@ class City extends Model
         'country-name',
         'population',
         'city-name',
+        'latitude',
+        'longitude',
+        'capital',
     ];
 
     public function users()

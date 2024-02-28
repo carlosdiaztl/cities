@@ -68,7 +68,7 @@ class HomeController extends Controller
         $city = new City($request->validated());
         $city->save();
         if(auth()->user()->cities()->count() >=5){
-            return redirect()->back()->withErrors('Maximo de ciudades del usuario');
+            return redirect()->back()->withErrors('El Maximo de ciudades por usuario es de 5 usuario');
         }
         auth()->user()->cities()->attach($city);
         return redirect()->back()->withSuccess('Ciudad Guardada con exito');

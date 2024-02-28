@@ -26,6 +26,9 @@ class CityRequest extends FormRequest
             'country-name' => ['required', 'string', 'min:1', 'max:200'],
             'population' => ['required', 'string', 'min:1', 'max:200'],
             'city-name' => ['required', 'string', 'min:1', 'max:200'],
+            'latitude' => ['required', 'string', 'min:1', 'max:200'],
+            'longitude' => ['required', 'string', 'min:1', 'max:200'],
+            'capital' => ['required', 'string', 'min:1', 'max:200'],
         ];
     }
 }
